@@ -1,0 +1,61 @@
+{
+  "name": "@postrchild/editor",
+  "version": "1.0.0-beta.0",
+  "description": "A set of fancy react components to help build micropub clients!",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --progress",
+    "//prepare": "storybook-to-ghpages && webpack --config webpack.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "author": "Grant Richmond <mail@grant.codes> (https://grant.codes)",
+  "homepage": "https://grantcodes.github.io/postrchild-editor-base",
+  "bugs": "https://github.com/grantcodes/postrchild-editor-base/issues",
+  "keywords": [
+    "indieweb",
+    "microformats",
+    "micropub",
+    "react",
+    "editor"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@postrchild/editor-base": "^2.2.0",
+    "is-url": "^1.2.4",
+    "pigeon-maps": "^0.14.0",
+    "pigeon-overlay": "^0.2.3",
+    "polished": "^3.4.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.1",
+    "react-datepicker": "^2.9.6",
+    "react-dom": "^16.10.1",
+    "react-geosuggest": "^2.12.0",
+    "react-select": "^3.0.7",
+    "react-tiny-link": "^2.0.1",
+    "react-use": "^12.2.2",
+    "styled-components": "^4.4.0",
+    "styled-icons": "^8.6.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-notes": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-command": "^0.5.0"
+  }
+}
